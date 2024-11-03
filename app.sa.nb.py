@@ -18,7 +18,7 @@ user_input = st.text_input("Enter a sentence:")
 # Predict sentiment when user submits input
 if st. button("Predict Sentiment"):
   if user_input:
-      prediction = loaded model. predict ([user_input])
+      prediction = loaded_model.predict([user_input])
       sentiment = "Positive" if prediction [0] == 1 else "Negative"
       st write(f"Predicted Sentiment: (sentiment)")
 else:
