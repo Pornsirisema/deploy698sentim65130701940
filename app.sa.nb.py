@@ -13,7 +13,7 @@ with open('sentiment_pipeline_model.pkl', 'rb') as file:
       st.title("Sentiment Analysis")
 
 # Input box for user to type a sentence
-user_input = st.text_ input("Enter a sentence:")
+user_input = st.text_input("Enter a sentence:")
 
 # Predict sentiment when user submits input
 if st. button("Predict Sentiment"):
