@@ -20,6 +20,6 @@ if st. button("Predict Sentiment"):
   if user_input:
       prediction = loaded_model.predict([user_input])
       sentiment = "Positive" if prediction [0] == 1 else "Negative"
-      st write(f"Predicted Sentiment: (sentiment)")
+      st.write(f"Predicted Sentiment: {prediction[0]}")
 else:
       st.write("Please enter a sentence to analyze.")
